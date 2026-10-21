@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>+-*/</title>
+    <style>
+        output {
+            font-size:20px;
+            color:green;
+            font-weight:20px;
+        }
+        #a {
+            background-color:aqua;
+        }
+        #b {
+            background-color:aquamarine;
+        }
+        #c {
+            background-color:skyblue;
+        }
+        #d {
+            background-color:seagreen;
+        }
+        #ab {
+            color:peru;
+            font-size:20px;
+            font-weight:15px;
+            text-align:right;
+        }
+        #ac{
+            color:orange;
+            font-size:20px;
+            font-weight:15px;
+            text-align:right;
+        }
+        #ad{
+            color:black;
+            font-size:20px;
+            font-weight:15px;
+            text-align:right;
+        }
+        #ae{
+            color:black;
+            font-size:20px;
+            font-weight:15px;
+            text-align:right;
+        }
+    </style>   
+    </head>
+    <body>
+        <h3>계산기</h3>
+        <fieldset id="a">
+            <legend id="ab">덧셈</legend>
+        <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+            <input type="number" name="num1" value="0">
+            +<input type="number" name="num2" value="0">
+            =<output name="result" for="num"></output>
+        </fieldset>  
+        </form>
+        <fieldset id="b">
+            <legend id="ac">뺄셈</legend>
+        <form oninput="result1.value=parseInt(num3.value)-parseInt(num4.value)">
+            <input type="number" name="num3" value="0">
+            -<input type="number" name="num4" value="0">
+            =<output name="result1" for="num"></output>
+        </fieldset>
+        </form>
+        <fieldset id="c">
+            <legend id="ad">곱셈</legend>
+        <form oninput="result2.value=parseInt(num5.value)*parseInt(num6.value)">
+            <input type="number" name="num5" value="0">
+            *<input type="number" name="num6" value="0">
+            =<output name="result2" for="num"></output>
+        </fieldset>
+        </form>
+        <fieldset id="d">
+            <legend id="ae">나눗셈</legend>
+        <form oninput="result3.value=parseInt(num7.value)/parseInt(num8.value)">
+            <input type="number" name="num7" value="0">
+            /<input type="number" name="num8" value="0">
+            =<output name="result3" for="num"></output>
+        </fieldset>   
+        </form>
+        <img src="img/cal.jpg" alt="">
+
+    </body>
+
+</html>
