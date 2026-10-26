@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meat charset="utf-8">
+        <title>test</title>
+        <style>
+            body{
+                font:14px 맑은 고딕;
+                
+            }
+            .container{
+                position:absolute;
+                width:1000px;
+                margin:0 auto;
+                border:1px solid#e7e7e7;
+                text-align: center;
+            }
+            header{
+                position:relative;
+                height:280px;
+                background-image:url("img/lion.jpg");
+                background-repeat: no-repeat;
+                background-position: left top;
+                background-size:cover;
+            }
+            header h1{
+                position: absolute;
+                right:20px;
+                bottom:70px;
+                font-size:3em;
+                color:#ffc;
+                text-shadow:1px 2px 2px  #000;
+            }
+            header h2{
+                position:absolute;
+                right:20px;
+                bottom:30px;
+                font-size:2em;
+                color:#ff0;
+                text-shadow:0px 1px 1px #000;
+            }
+            .navi{
+                position: relative;
+                background:black;
+                margin-top:-15px;
+                width:1000px;
+                height:60px;
+            }
+            .navi ul{
+                list-style: none;
+                height:40px;
+                padding-top:10px;
+                padding-bottom:5px;
+            }
+            .navi ul li{
+                display:inline-block;
+                font-size:15px;
+            }
+            .navi a,.navi a:visited{
+                padding:10px 5px 5px 35px;
+                display: block;
+                color:#Fff;
+                width:150px;
+                text-decoration: none;
+            }
+            .navi a:hover,.navi a:active,.navi a:focus{
+                text-shadow:0px 2px 2px #000;
+                color:#fc0;
+            }
+            .sidebar{
+                float:right;
+                width:200px;
+                height:550px;
+                background-color:#dfd;
+                padding-top:20px;
+                padding-left:10px;
+                padding-right:10px;
+            }
+            .sidebar img{
+                margin-bottom:5px;
+                border:1px solid #ccc;                
+                text-align:center;
+                background-size:cover;
+            }
+            .sidebar img:hover{
+                border:1px solid#000;
+                opacity: 1.0;
+            }
+            .content{
+                background-color:#ffffff;
+                padding-top:5px;
+                padding-left:10px;
+                width:720px;
+                float:left;
+            }
+            footer{
+                padding:10px 0;
+                background-color:#030;
+                color:#fff;
+                text-align: center;
+                clear:both;
+            }
+            header , section , footer , aside , article,figure{
+                display:block;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>자연동물원</h1>
+                <h2>자연과 가까워 지는 시간</h2>
+            </header>
+            <nav class="navi">
+                <ul>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">동물소개</a></li>
+                    <li><a href="#">예약안내</a></li>
+                    <li><a href="#">입장비용</a></li>
+                </ul>
+            </nav>
+            <article>
+                <section class="content">
+                    <h2>자연 동물원 소개</h2>
+                    <h3>자연과 함께하는 시간</h3>
+                    <p>자연과 함께할 수 있는 동물원!<br>우리가 상상만 하던 동물들을 만나보세요!
+                    </p>
+                    <img src="img/panda.jpg" alt="">
+                    <h2>자연동물원 이벤트 소개</h2>
+                    <h3>돌고래 먹이 주기</h3>
+                    <img src="img/dol.jpg" alt="">
+                    <p><b>돌고래</b>에게 먹이를 먹여볼 수 있는 이벤트!<br>
+                       최대 20인 참여 가능!
+                       <br>참여 시간 13:00~14:00
+                       <br>참여 시간 14:10~15:10
+                       <br>참여 시간 15:20~16:20
+                       <br>참여 시간 16:30~17:30</p>
+                    <hr>
+                    <h3>타조 레이싱</h3>
+                    <img src="img/tur.jpg" alt="">
+                    <p><b>타조</b>를 타고 함께 달립니다!<br>
+                    최대 10인 참여 가능!
+                       <br>참여 시간 11:00~11:20
+                       <br>참여 시간 11:30~11:50
+                    </p>                   
+                    </section>
+            </article>
+            <aside class="sidebar">
+                <h3>※비상 연락처※</h3>
+                <p>동물원 이용 시 <b>애로 사항</b>은 000-000-0000으로</p>
+                <p><b>미아</b>관련 연락은 ###-###-####으로 연락바랍니다.
+                   그럼 즐거운 동물원 관람되세요.</p>
+                <img src="img/ele.jpg" alt="">
+                <img src="img/hedge.jpg" alt="">
+            </aside>         
+            <footer>
+                <nav class="navi">
+                <ul>
+                    <li><a href="#">주변 식당</a></li>
+                    <li><a href="#">주변 숙소</a></li>
+                    <li><a href="#">주변 주차장</a></li>
+                    <li><a href="#">주변 편의점</a></li>
+                </ul>
+                </nav>
+            </footer>
+        </div>
+    </body>
+</html>
