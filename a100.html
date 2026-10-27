@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Fluid Image</title>
+    </head>
+    <body>
+        <picture>
+            <source srcset="img/dog.jpg" media="(min-width:1024px)">
+            <source srcset="img/panda.jpg" media="(min-width:768px)">
+            <source srcset="img/bone.jpg" media="(min-width:320px)">
+            <img src="img/hedge.jpg" alt="hedge" style="width:100%;">
+        </picture>
+    </body>
+</html>
