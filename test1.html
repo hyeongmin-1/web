@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>test</title>
+        <link href="임형민/style2.css" rel="stylesheet" type="text/css">
+        <style>
+            body{
+                background-color: lightgray;
+            }
+            .body1{
+                width:400px;
+                height: 800px;
+                border:1px solid black;
+                margin:10px;
+                float:left;                          
+            }
+            .body2{
+                width:250px;
+                height:150px;
+                background-color:blanchedalmond;
+                margin-left:50px;
+            }
+            .header1{
+                position: relative;                
+                width:100%;
+                height:100px;
+                background-image:url('임형민/bg3.jpg');
+                background-repeat: no-repeat;
+                background-size:100% 200px;               
+            }
+            table{
+                padding-left:0px;
+            }
+            table  tr td {
+                border:1px solid black;
+                text-align: center;
+
+            }
+            th{
+                padding:5px;
+            }
+            td{
+                width:100px;
+                height:100px;
+            }
+            th{
+                background-color: bisque;
+            }
+            ul li {
+                list-style: none;
+            }
+            .navi{
+                position:absolute;
+                background-color: black;
+                width:100%;
+                height: 60px; 
+            }
+            .navi ul{
+                list-style:none;
+                height:40px;
+                padding:0;
+            }
+            .navi ul li{
+                display:inline-block;
+                font-size:20px;
+                color:white;               
+            }
+            .navi a{
+                color:white;
+                text-decoration: none;
+                padding:5px 4px;
+                margin-left:4px;
+            }
+            .navi a:hover{
+                color:lightblue;
+                text-decoration: none;
+                padding:5px 4px;
+                margin-left:4px;
+                
+            
+            }
+            form .reg{
+                font-size:15px;
+            }
+            
+            button{
+                width:150px;
+                height:60px;                
+                background-color:palegoldenrod;
+            }
+            .button1{
+                text-align: center;
+                padding-top:50px;
+            }
+            .bold{
+                font-size:25;
+                font-weight:bold;
+                margin-right:3px;
+            }
+            .rt{
+                text-align: center;
+            }
+            #in{
+                text-indent:15px;
+            }
+            .text{
+                width:300px;
+                height:50px;
+                text-align: left;
+            }
+            .mar{
+                margin-left:200px;
+            }
+            
+        </style>      
+    </head>
+    <body>            
+            <div class="header1">
+                <nav class="navi">
+                    <ul>
+                        <li class="bold">Web Retreat</li>
+                        <li><a href="#">리트릿 소개</a></li>
+                        <li><a href="#">학습 일정</a></li>
+                        <li><a href="#">객실 예약</a></li>                 
+                    </ul>
+            </nav>                    
+                <header>
+                </header>             
+            </div>
+            <div class="mar">        
+        <div class="body1" id="in">
+            <h2>웹 개발 학습 리트릿</h2>
+            <h4>Learning Perfect</h4>
+            <h4>배움과 럭셔리의 완벽한 조화.</h4>
+            <ul>
+                <li>HTNL5 & css 기초 마스터</li>
+                <li>실습 중심 프로젝트 개발</li>
+                <li>현대적인 웹 표준 (HTNL5)</li>
+                <li>문법 및 구조 기초부터 심화까지</li>
+            </ul>
+            <p>현대적이고 구조화된 웹 페이지 구축 방법을 배우세요.
+                <strong>구조</strong>(<mark>핵심개념</mark>) 및 스타일과 같은 기초 요소를 마스터하세요.</p>
+            <div class="body2">
+                <p><pre>태그를 사용하면</pre> 공백이나<pre>줄 바꿈이 입력된 그대로 유지됩니다.
+                </pre></p> 
+            </div>    
+        </div>
+        <div class="body1">
+            <h2 id="in">주간 학습 여정</h2>
+            <h4 id="in">Journey</h4>
+            <caption>HTML5 학습 일정</caption>
+                <table>
+                    <tr>
+                        <th>주차</th>
+                        <th>주제</th>
+                        <th>실습내용</th>
+                        <th>진행방식</th>
+                    </tr>                    
+                    <tr>
+                        <td>week1</td>
+                        <td colspan="2">Foundations - 텍스트 및 목록 구조 마스터</td>                        
+                        <td>온라인</td>                        
+                    </tr>
+                    <tr>
+                        <td rowspan="2">week2</td>
+                        <td rowspan="2">Application(심화적용)</td>
+                        <td>이력서 폼 & 멀티미디어</td>
+                        <td>대면</td>                        
+                    </tr>
+                    <tr>                                              
+                        <td>비디오/오디오 삽입</td>
+                        <td>대면</td>                        
+                    </tr>
+                </table>
+                <p class="rt">2주 과정 수료 시 인증서 수여</p>
+        </div>
+        <div class="body1">
+            <h2 id="in">오션 스위트 예약</h2>
+            <p id="in">*당신의 완벽한 휴식을 위한 프리미엄 객실을 예약하세요.</p>
+            <form>
+                <fieldset>
+                    <legend>연락처정보</legend>
+                            <ul>
+                                <li>             
+                                <label class="reg" for="name">성명(법적 실명)</label>
+                                <input type="text" id="uname" placeholder="실명을 입력하세요">
+                                </li>                                           
+                                <li>
+                                <label class="reg" for="phone">전화번호</label>                            
+                                <input type="tel" id="uphoen" placeholder="010-0000-0000">                            
+                                </li>
+                                <li>                            
+                                <label class="reg" for="email">이메일 주소</label>
+                                <input type="email" id="uemail" placeholder="example@mail.com">
+                                </li> 
+                            </ul>                                           
+                </fieldset>
+                <fieldset>
+                    <legend>예약 상세</legend>
+                    <ul>
+                        <li>                                       
+                        <label class="reg" for="date">도착 날짜</label>
+                        <label class="reg" for="tra">객실 유형</label>
+                        <label class="" for="man">투숙인원</label>
+                        </li> 
+                        <li>
+                        <input type="date">                 
+                    <select id="tra">                                                
+                        <option value="oce">오션뷰 스위트</option>
+                        <option value="bea">비치프론트 빌라</option>
+                        <option value="gar">가든 스위트</option>
+                    </select>               
+                    <input type="number" id="man" value="1" min="1" max="8">
+                    </li>
+                    </ul>                    
+                </fieldset>
+                <fieldset>
+                    <legend>추가옵션</legend>                    
+                    <ul>                        
+                        <li>
+                            <label>식사 서비스:</label>
+                            <label><input type="radio" name="meal" value="조식포함">조식 포함</label>
+                            <label><input type="radio" name="meal" value="포함 안함">포함 안함</label>
+                        </li>
+                        <li>   
+                            <label><input type="checkbox" name="service" value="pickup">리조트 픽업 서비스</label>
+                            <label><input type="checkbox" name="service" value="checkout">레이트 체크아웃</label>
+                            </li>
+                        </ul>
+                    <p>특별 요청사항</p>
+                    <textarea class="text" cols="30" rows="5" placeholder="식단 관련 요구나 기타 요청 사항을 적어주세요">
+                    </textarea>
+                </fieldset>
+            </form>
+            <div class="button1">            
+            <button type="submit">예약 확정</button>
+            <button type="reset">처음부터 다시</button>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
