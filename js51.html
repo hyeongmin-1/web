@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>객체 조작 메서드 - 요소 삭제 , 변경</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script>
+            $(function(){
+                var result_1 = $("#ch1").prop("checked");
+                console.log(result_1);
+
+                var reult_2 = $("#ch2").prop("checked");
+                console.log(result_2);
+
+                var result_2 = $("#ch3").prop("checked",true);
+
+                var result_3 = $("se_1").prop("selectedIndex");
+                console.log(result_3);
+            });            
+        </script>
+         
+    </head>
+    <body>
+        <h1><strong>객체 조작 및 생성</strong></h1>
+        <form action="#" id="form_1">
+            <p>
+                <input type="checkbox" name="ch1" id="ch1">
+                <label for="ch1">ch1</label>
+                <input type="checkbox" name="ch2" id="ch2" checked>
+                <label for="ch2">ch2</label>
+                <input type="checkbox" name="ch3" id="ch3">
+                <label for="ch3">ch3</label>
+            </p>
+            <p>
+                <select name="se_1" id="se_1">
+                    <option value="opt1">1</option>
+                    <option value="opt2">2</option>
+                    <option value="opt3" selected>3</option>
+                </select>
+            </p>
+            
+        </form>
+    </body>
+</html>

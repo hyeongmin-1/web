@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>객체 조작 및 생성-요소 삭제 , 변경</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script>
+            $(function( ){
+                var srcVal = $("#sec_1 img").attr("src");
+                console.log(srcVal);
+            $("#sec_1 img")
+            .attr({
+                "width":200,
+                "src": srcVal.replace("pic_1.jpg","pic_2.jpg"),
+                "alt" : "사진"
+            })
+            .removeAttr("border");
+            })
+        </script>    
+    </head>
+    <body>
+        <h1><strong>객체 조작 및 생성</strong></h1>
+        <section id="sec_1">
+            <h2>이미지 속성</h2>
+            <p><img src="img/pic_1.jpg" alt="바위" border="2"></p>
+        </section>
+    </body>
+</html>

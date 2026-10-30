@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Class 셀렉터 연습</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script>
+            function addimage(){
+                $(".class1").html("<img src='img/dog.jpg'>");
+            }
+
+        </script>
+    </head>
+    <body>
+        <div class="class1"></div>
+        <div class="class1"></div>
+        <input type="button" value="이미지 추가하기" onClick="addimage()"/>
+    </body>
+</html>
