@@ -13,27 +13,29 @@
                         $(".nav-link active")                        
                         .css({"background-color":"#ff0"});
             });
-
-        });
-       
+        });       
         $(function(){
-            $(".card-img-top").hover(function(){
+            $(".card").hover(function(){
                 $(".card-text1")
-                .css({"font-size":"bold"});
-            });
+                .css({"font-weight":"bold"});
+            },
+        function(){
+            $(".card-text1").css({"font-weight":"normal"});
+
             
+        });            
         });
-        
-                 
+
         </script>
-        <style>
-            .card{
-                float:right;
-                margin:auto;
-                margin-right:100px;                                
-                text-align: center;
+        <style>                 
+            .card-text1{
+                text-decoration: none;
+                color: blue;
             }
-        
+            .carousel-inner{
+              height: 700px;               
+            }
+            
         </style>
     </head>
     <body>
@@ -49,7 +51,7 @@
         <a class="nav-link active" aria-current="page" href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Style</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Pricing</a>
@@ -64,7 +66,7 @@
 <div id="carouselExample" class="carousel slide">
 <div class="carousel-inner">
   <div class="carousel-item active">    
-    <img src="img/shoe1.jpg" class="d-block w-100" alt="..."></a>
+    <img src="img/shoe1.jpg" class="d-block w-100" alt="...">
   </div>
   <div class="carousel-item">
     <img src="img/shoe2.jpg" class="d-block w-100" alt="...">
@@ -82,30 +84,63 @@
   <span class="visually-hidden">Next</span>
 </button>
 </div>
-<div class="card" style="width: 18rem;">
-<img src="img/shoe5.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">light gray</h5>
-  <p><a href class="card-text1">조깅을 위한 편한 신발</a></p>
-  <a href="https://www.nike.com" class="btn btn-primary">click the buy</a>
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+          <img src="img/shoe5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Light gray</h5>
+            <p><a href class="card-text1">일상에 지친 당신을 위한 힐링. 당신을 지탱해 줄 운동화</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+          <img src="img/shoe7.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Female Dress Shoes</h5>
+            <p><a href class="card-text1">아름다운 당신. 또한 시간이 흐르는 강에서 기품을 지켜줄 단아한 구두.</a></p>           
+      </div>
+      </div>
+    </div>   
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+          <img src="img/shoe8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Trekking</h5>
+            <p><a href class="card-text1">가벼운 무게 가벼운 발걸음.자연을 맞이하는 기쁜 시간</a></p>            
+      </div>
+      </div>
+    </div>     
 </div>
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<div class="container-fluid">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#">ON</a>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">S/S</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">S/F</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">F/W</a>
+      </li>
+    </ul>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="" aria-label="Search" />
+      <button class="btn btn-outline-success" type="submit">Search</Search></button>
+    </form>
+  </div>
 </div>
-<div class="card" style="width: 18rem;">
-<img src="img/shoe4.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">blue</h5>
-  <p><a href class="card-text1">중거리 달리기를 위한 운동화</a></p>
-  <a href="https://abcmart.a-rt.com" class="btn btn-primary">click the buy </a>
-</div>
-</div>
-<div class="card" style="width: 18rem;">
-<img src="img/shoe6.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">artshoe</h5>
-  <p><a href class="card-text1">홍대 학생들의 졸업작품</a></p>
-  <a href="https://www.coupang.co.kr" class="btn btn-primary">click the buy</a>
-</div>
-</div>
-        
+</nav> 
+
     </body>
 </html>
